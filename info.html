@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>PUZZLE by Tatsuya Kawasaki</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="info.css">
+
+<script src="https://kit.fontawesome.com/914fc0cb70.js" crossorigin="anonymous">
+	</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="pstyle.js"></script>
+
+<script>
+// ページのロード完了時にローダーをフェードアウト
+$(window).on('load', function() {
+  $(".page-loader").fadeOut('slow');
+});
+
+// ページのロードが完了しない場合でも10秒たったら強制的にローダーをフェードアウト（オプション）
+setTimeout('stoploading()', 10000);
+function stoploading() {
+  $(".page-loader").fadeOut('fast');
+}
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+    <a class="menu">
+        <span class="menu__line menu__line--top"></span>
+        <span class="menu__line menu__line--center"></span>
+        <span class="menu__line menu__line--bottom"></span>
+    </a>
+    <nav class="gnav">
+        <div class="gnav__wrap">
+            <ul class="gnav__menu">
+					 <li class="gnav__menu__item"><a href="info.html">INFORMATION</a></li>
+					 <li class="gnav__menu__item"><a href="3puzzlecollect.html">COLLECTION</a></li>
+					 <li class="gnav__menu__item"><a href="3puzzleabout.html">ABOUT</a></li>
+					 <li class="gnav__menu__item"><a href="mailto:info&#64;puzzle.com">CONTACT</a></li>
+				    <li class="gnav__menu__item"><a href="https://shop.puzzleimage.net">ONLINESTORE</a></li>
+					 <li class="gnav__menu__item"><a href="https://instagram.com/___.puzzle.___">INSTAGRAM</a></li>
+					 <li class="gnav__menu__item"><a href="https://m.facebook.com/PUZZLE.japan">FACEBOOK</a></li>
+            </ul>
+        </div><!--gnav-wrap-->
+    </nav>
+
+<script>
+var navFlg = false;
+$('.menu').on('click',function(){
+    $('.menu__line').toggleClass('active');
+    $('.gnav').fadeToggle();
+    if(!navFlg){
+        $('.gnav__menu__item').each(function(i){
+            $(this).delay(i*300).animate({
+                'margin-left' : 0,
+                'opacity' : 1,
+            },500);
+        });
+        navFlg = true;
+    }
+    else{
+        $('.gnav__menu__item').css({
+            'margin-left' : 100,
+            'opacity' : 0,
+        });
+        navFlg = false;
+    }
+});
+</script>
+
+<div class="page-loader">
+  <div id="fountainTextG">
+    <div id="fountainTextG_1" class="fountainTextG">P</div>
+    <div id="fountainTextG_2" class="fountainTextG">U</div>
+    <div id="fountainTextG_3" class="fountainTextG">Z</div>
+    <div id="fountainTextG_4" class="fountainTextG">Z</div>
+    <div id="fountainTextG_5" class="fountainTextG">L</div>
+    <div id="fountainTextG_6" class="fountainTextG">E</div>
+    <div id="fountainTextG_7" class="fountainTextG">i</div>
+    <div id="fountainTextG_8" class="fountainTextG">m</div>
+    <div id="fountainTextG_9" class="fountainTextG">a</div>
+    <div id="fountainTextG_10" class="fountainTextG">g</div>
+    <div id="fountainTextG_11" class="fountainTextG">e</div>
+    <div id="fountainTextG_12" class="fountainTextG">.</div>
+    <div id="fountainTextG_13" class="fountainTextG">n</div>
+    <div id="fountainTextG_14" class="fountainTextG">e</div>
+    <div id="fountainTextG_15" class="fountainTextG">t</div>
+  </div>
+</div>
+
+<section class="header">
+	<img src="puzzleimg/IMG_6668.jpg" class="logo">
+	</section>
+
+
+
+
+
+<!--info-post-------------------------------------------------------------------->
+
+
+ <div class="grid">
+
+  <div class="item project">
+    <div class="content">
+      <div class="desc">
+        <img src="puzzleimg/puzzlesnap.PNG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor.</p>
+      </div>
+	 <li class="date">Dec. 19, 2020</li>
+	</div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="desc">
+        <img src="puzzleimg/IMG_6655.JPG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
+      </div>
+	 <li class="date">Dec. 15, 2020</li>
+	</div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
+      </div>
+	 <li class="date">Dec. 10, 2020</li>
+	</div>
+  </div>
+  <div class="item project">
+    <div class="content">
+      <div class="desc">
+        <img src="puzzleimg/IMG_6665.JPG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><img src="puzzleimg/IMG_6700.JPG"><p>Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+      </div>
+	 <li class="date">Dec. 2, 2020</li>
+	</div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="desc">
+		<img src="puzzleimg/IMG_6664.JPG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
+      </div>
+	 <li class="date">Nov. 28, 2020</li>
+	</div>
+  </div>
+  <div class="item photo">
+    <div class="content">
+      <div class="desc">
+			<img src="puzzleimg/IMG_6663.JPG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
+      </div>
+	 <li class="date">Nov. 19, 2020</li>
+	</div>
+  </div>
+  <div class="item blog">
+    <div class="content">
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
+      </div>
+	  <li class="date">Nov. 13, 2020</li>
+	</div>
+  </div>
+ <div class="item project">
+    <div class="content">
+      <div class="desc">
+        <img src="puzzleimg/IMG_5766.JPG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
+      </div>
+	  <li class="date">Nov. 8, 2020</li>
+    </div>
+  </div>
+</div>
+
+<!--info-post---------------------------------------------------------------->
+
+
+<section class="foot"><p>Copyright ©︎ 2020 Puzzle All Rights Reserved.</p>
+</section>
+
+</div>
+<script src="info.js"></script>
+</body>
+</html>
