@@ -9,7 +9,7 @@
 	--icon-bk-color: #ddd;
 	--large-width: 1000px;
 }
-	
+
 
 body {
 	margin: 0;
@@ -222,7 +222,7 @@ body {
    color:rgb(255,255,255);
   }
 }
-		
+
 
 .menu{
 	height: 20px;
@@ -232,7 +232,7 @@ body {
    width: 25px;
    z-index: 99;
 	display: flex;
-	
+
 }
 
 .menu__line{
@@ -283,16 +283,16 @@ body {
 
 .gnav__menu{
 	position: absolute;
-	left: 65%;
+	left: 50%;
 	transform: translate(-50%);
 	width: 100px;
 	list-style: none;
 	background-color: ;
-	
+
 }
 
 .gnav__menu__item{
-   margin: 3vh 0 3vh 100px;
+   margin: 0 0 0 100px;
 	opacity: 0;
 	background-color: ;
 }
@@ -329,7 +329,7 @@ body {
 	z-index: 99;
 	background-color:;
 }
-			
+
 .logo {
 	max-height: 5vh;
 	max-width: 100%;
@@ -350,7 +350,7 @@ body {
 	background-color: ;
 	z-index: 3;
 }
-						
+
 .mv-bg {
 	position: absolute;
 	display:;
@@ -361,7 +361,7 @@ body {
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	
+
 	/*  *-webkit-transform: translateX(-50%);
 	left: 50%;
 	max-height: 50vh;
@@ -407,7 +407,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	
+
 	}
 
 .contents-wrap {
@@ -416,7 +416,7 @@ body {
 	align-content: ;
 	justify-content: space-between;
 
-	
+
 }
 
 .contents-box {
@@ -445,7 +445,7 @@ body {
 	.contents-wrap {
 		flex-direction: column;
 	}
-	
+
 	.contents-box {
 		width: 100%;
 	}
@@ -502,7 +502,7 @@ body {
 	.flex03 {
 		flex-direction: column;
 	}
-	
+
 	.flex03 .flexitem {
 		width: 100%;
 	}
@@ -555,7 +555,7 @@ body {
 	text-align: center;
 	align-items: center;
 	background-color: ;
-	 
+
 }
 
 .gnav__menu__item2 a{
@@ -581,7 +581,7 @@ body {
 		.menu {
 			top: 3vh;
 			}
-		
+
 		.blogo {
 			display: none;
 			}
