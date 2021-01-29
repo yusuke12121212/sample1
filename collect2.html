@@ -28,6 +28,28 @@ function stoploading() {
 }
 </script>
 
+<script>
+function showElementAnimation() {
+
+	var element = document.getElementsByClassName('js-animation');
+	if(!element) return; // 要素がなかったら処理をキャンセル
+
+	var showTiming = window.innerHeight > 768 ? 200 : 40; // 要素が出てくるタイミングはここで調整
+	var scrollY = window.pageYOffset;
+	var windowH = window.innerHeight;
+
+	for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if(scrollY + windowH - showTiming > elemY) {
+			element[i].classList.add('is-show');
+		} else if(scrollY + windowH < elemY) {
+			// 上にスクロールして再度非表示にする場合はこちらを記述
+			element[i].classList.remove('is-show');
+		}
+	}
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
+</script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -41,7 +63,7 @@ function stoploading() {
             <ul class="gnav__menu">
 					 <li class="gnav__menu__item"><a href="index.html">HOME</a></li>
 					 <li class="gnav__menu__item"><a href="info.html">INFORMATION</a></li>
-					 <li class="gnav__menu__item"><a href="collect.html">COLLECTION</a></li>
+					 <li class="gnav__menu__item"><a href="collect2.html">COLLECTION</a></li>
 					 <li class="gnav__menu__item"><a href="about.html">ABOUT</a></li>
 					 <li class="gnav__menu__item"><a href="mailto:info&#64;puzzle.com">CONTACT</a></li>
 				   <li class="gnav__menu__item"><a href="https://shop.puzzleimage.net">ONLINESTORE</a></li>
@@ -101,24 +123,26 @@ $('.menu').on('click',function(){
 
 <div id="photosbox">
 <section id="photos">
-	<a href="img/IMG_6645.JPG" data-lightbox="demo">
-		<div class="element js-animation><img src="img/IMG_6645.JPG"></div></a>
-	<a href="img/IMG_5761.JPG" data-lightbox="demo">
-		<div class="element js-animation><img src="img/IMG_5761.JPG"></div></a>
-  <a href="img/IMG_6646.jpg" data-lightbox="demo">
-	  <div class="element js-animation><img src="img/IMG_6646.jpg"></div></a>
-  <a href="img/IMG_6647.JPG" data-lightbox="demo">
-	  <div class="element js-animation><img src="img/IMG_6647.JPG"></div></a>
-  <a href="img/IMG_5762.JPG" data-lightbox="demo">
-	  <div class="element js-animation><img src="img/IMG_5762.JPG"></div></a>
-	<a href="img/IMG_6648.JPG" data-lightbox="demo">
-    <div class="element js-animation><img src="img/IMG_6648.JPG"></div></a>
-	<a href="img/IMG_6648.JPG" data-lightbox="demo">
-    <div class="element js-animation><img src="img/IMG_6649.JPG"></div></a>
-	<a href="img/IMG_6650.JPG" data-lightbox="demo">
-    <div class="element js-animation><img src="img/IMG_6650.JPG"></div></a>
-	<a href="img/IMG_5763.JPG" data-lightbox="demo">
-    <div class="element js-animation><img src="img/IMG_5763.JPG"></div></a>
+
+	<div class="element js-animation>
+		<a href="img/IMG_6645.JPG" data-lightbox="demo">
+	 		<img src="img/IMG_6645.JPG"></a>
+		<a href="img/IMG_5761.JPG" data-lightbox="demo">
+	 		<img src="img/IMG_5761.JPG"></a>
+  	<a href="img/IMG_6646.jpg" data-lightbox="demo">
+	 		<img src="img/IMG_6646.jpg"></a>
+  	<a href="img/IMG_6647.JPG" data-lightbox="demo">
+	    <img src="img/IMG_6647.JPG"></a>
+    <a href="img/IMG_5762.JPG" data-lightbox="demo">
+	    <img src="img/IMG_5762.JPG"></a>
+	  <a href="img/IMG_6648.JPG" data-lightbox="demo">
+      <img src="img/IMG_6648.JPG"></a>
+	  <a href="img/IMG_6648.JPG" data-lightbox="demo">
+      <img src="img/IMG_6649.JPG"></a>
+	  <a href="img/IMG_6650.JPG" data-lightbox="demo">
+      <img src="img/IMG_6650.JPG"></a>
+	  <a href="img/IMG_5763.JPG" data-lightbox="demo">
+      <img src="img/IMG_5763.JPG"></a></div>
 	<a href="img/IMG_6651.JPG" data-lightbox="demo">
 		<div class="element js-animation><img src="img/IMG_6651.JPG"></div></a>
 	<a href="img/IMG_5764.JPG" data-lightbox="demo">
@@ -147,7 +171,7 @@ $('.menu').on('click',function(){
 </section>
 </div>
 
-<section class="foot"><p>Copyright ©︎ 2020 Puzzle All Rights Reserved.</p>
+<section class="foot"><p>Copyright ©︎ 2021 Puzzle All Rights Reserved.</p>
 </section>
 
 </div>

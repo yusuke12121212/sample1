@@ -452,17 +452,6 @@ body {
 }
 
 /* collectionーーーーーーーーーーーーーーーーーーーーーー */
-.js-animation {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(40px);
-  transition: all 1s;
-}
-.js-animation.is-show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0px);
-}
 
 #photosbox {
 	width: ;
@@ -524,6 +513,18 @@ body {
   -webkit-column-count: 2;
   column-count:         2;
   }
+}
+
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
 
 
