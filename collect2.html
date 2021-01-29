@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>PUZZLE by Tatsuya Kawasaki</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+
+<script src="https://kit.fontawesome.com/914fc0cb70.js" crossorigin="anonymous">
+	</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="pstyle.js"></script>
+<link rel="stylesheet" href="dist/css/lightbox.css">
+
+<script src="dist/js/lightbox.js"></script>
+
+<script>
+// ページのロード完了時にローダーをフェードアウト
+$(window).on('load', function() {
+  $(".page-loader").fadeOut('slow');
+});
+
+// ページのロードが完了しない場合でも10秒たったら強制的にローダーをフェードアウト（オプション）
+setTimeout('stoploading()', 10000);
+function stoploading() {
+  $(".page-loader").fadeOut('fast');
+}
+</script>
+<script>
+function showElementAnimation() {
+
+  var element = document.getElementsByClassName('js-animation');
+  if(!element) return; // 要素がなかったら処理をキャンセル
+
+  var showTiming = window.innerHeight > 768 ? 200 : 40; // 要素が出てくるタイミングはここで調整
+  var scrollY = window.pageYOffset;
+  var windowH = window.innerHeight;
+
+  for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if(scrollY + windowH - showTiming > elemY) {
+      element[i].classList.add('is-show');
+    } else if(scrollY + windowH < elemY) {
+      // 上にスクロールして再度非表示にする場合はこちらを記述
+      element[i].classList.remove('is-show');
+    }
+  }
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
+</script>
+
+</head>
+<body>
+<div class="wrapper">
+    <a class="menu">
+        <span class="menu__line menu__line--top"></span>
+        <span class="menu__line menu__line--center"></span>
+        <span class="menu__line menu__line--bottom"></span>
+    </a>
+    <nav class="gnav">
+        <div class="gnav__wrap">
+            <ul class="gnav__menu">
+					 <li class="gnav__menu__item"><a href="index.html">HOME</a></li>
+					 <li class="gnav__menu__item"><a href="info.html">INFORMATION</a></li>
+					 <li class="gnav__menu__item"><a href="collect.html">COLLECTION</a></li>
+					 <li class="gnav__menu__item"><a href="about.html">ABOUT</a></li>
+					 <li class="gnav__menu__item"><a href="mailto:info&#64;puzzle.com">CONTACT</a></li>
+				   <li class="gnav__menu__item"><a href="https://shop.puzzleimage.net">ONLINESTORE</a></li>
+					 <li class="gnav__menu__item"><a href="https://instagram.com/___.puzzle.___">INSTAGRAM</a></li>
+					 <li class="gnav__menu__item"><a href="https://m.facebook.com/PUZZLE.japan">FACEBOOK</a></li>
+            </ul>
+        </div><!--gnav-wrap-->
+    </nav>
+
+<script>
+var navFlg = false;
+$('.menu').on('click',function(){
+    $('.menu__line').toggleClass('active');
+    $('.gnav').fadeToggle();
+    if(!navFlg){
+        $('.gnav__menu__item').each(function(i){
+            $(this).delay(i*300).animate({
+                'margin-left' : 0,
+                'opacity' : 1,
+            },500);
+        });
+        navFlg = true;
+    }
+    else{
+        $('.gnav__menu__item').css({
+            'margin-left' : 100,
+            'opacity' : 0,
+        });
+        navFlg = false;
+    }
+});
+</script>
+
+<div class="page-loader">
+  <div id="fountainTextG">
+    <div id="fountainTextG_1" class="fountainTextG">P</div>
+    <div id="fountainTextG_2" class="fountainTextG">U</div>
+    <div id="fountainTextG_3" class="fountainTextG">Z</div>
+    <div id="fountainTextG_4" class="fountainTextG">Z</div>
+    <div id="fountainTextG_5" class="fountainTextG">L</div>
+    <div id="fountainTextG_6" class="fountainTextG">E</div>
+    <div id="fountainTextG_7" class="fountainTextG">i</div>
+    <div id="fountainTextG_8" class="fountainTextG">m</div>
+    <div id="fountainTextG_9" class="fountainTextG">a</div>
+    <div id="fountainTextG_10" class="fountainTextG">g</div>
+    <div id="fountainTextG_11" class="fountainTextG">e</div>
+    <div id="fountainTextG_12" class="fountainTextG">.</div>
+    <div id="fountainTextG_13" class="fountainTextG">n</div>
+    <div id="fountainTextG_14" class="fountainTextG">e</div>
+    <div id="fountainTextG_15" class="fountainTextG">t</div>
+  </div>
+</div>
+
+<section class="header">
+	<img src="img/IMG_6669.jpg" class="logo">
+	</section>
+
+
+<div id="photosbox">
+<section id="photos">
+	<a href="img/IMG_6645.JPG" data-lightbox="demo">
+		<div class="element js-animation><img src="img/IMG_6645.JPG"></div></a>
+	<a href="img/IMG_5761.JPG" data-lightbox="demo">
+		<img src="img/IMG_5761.JPG"></a>
+  <a href="img/IMG_6646.jpg" data-lightbox="demo">
+	  <img src="img/IMG_6646.jpg"></a>
+  <a href="img/IMG_6647.JPG" data-lightbox="demo">
+	  <img src="img/IMG_6647.JPG"></a>
+  <a href="img/IMG_5762.JPG" data-lightbox="demo">
+	  <img src="img/IMG_5762.JPG"></a>
+	<a href="img/IMG_6648.JPG" data-lightbox="demo">
+    <img src="img/IMG_6648.JPG"></a>
+	<a href="img/IMG_6648.JPG" data-lightbox="demo">
+    <img src="img/IMG_6649.JPG"></a>
+	<a href="img/IMG_6650.JPG" data-lightbox="demo">
+    <img src="img/IMG_6650.JPG"></a>
+	<a href="img/IMG_5763.JPG" data-lightbox="demo">
+    <img src="img/IMG_5763.JPG"></a>
+	<a href="img/IMG_6651.JPG" data-lightbox="demo">
+		<img src="img/IMG_6651.JPG"></a>
+	<a href="img/IMG_5764.JPG" data-lightbox="demo">
+		<img src="img/IMG_5764.JPG"></a>
+	<a href="img/IMG_6652.JPG" data-lightbox="demo">
+		<img src="img/IMG_6652.JPG"></a>
+	<a href="img/IMG_6653.JPG" data-lightbox="demo">
+		<img src="img/IMG_6653.JPG"></a>
+	<a href="img/IMG_5765.JPG" data-lightbox="demo">
+		<img src="img/IMG_5765.JPG"></a>
+	<a href="img/IMG_6654.JPG" data-lightbox="demo">
+		<img src="img/IMG_6654.JPG"></a>
+	<a href="img/IMG_6655.JPG" data-lightbox="demo">
+		<img src="img/IMG_6655.JPG"></a>
+	<a href="img/IMG_5766.JPG" data-lightbox="demo">
+		<img src="img/IMG_5766.JPG"></a>
+	<a href="img/IMG_6656.JPG" data-lightbox="demo">
+		<img src="img/IMG_6656.JPG"></a>
+	<a href="img/IMG_6657.JPG" data-lightbox="demo">
+		<img src="img/IMG_6657.JPG"></a>
+	<a href="img/IMG_6658.JPG" data-lightbox="demo">
+		<div class="element js-animation><img src="img/IMG_6658.JPG"></div></a>
+	<a href="img/IMG_5767.JPG" data-lightbox="demo">
+		<div class="element js-animation><img src="img/IMG_5767.JPG"></div></a>
+
+</section>
+</div>
+
+<section class="foot"><p>Copyright ©︎ 2020 Puzzle All Rights Reserved.</p>
+</section>
+
+</div>
+</body>
+</html>
