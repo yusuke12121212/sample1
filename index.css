@@ -475,7 +475,7 @@ body {
 @media screen and (orientation:landscape) {
 	#photos {
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 39vw 40vw 30.5vw 40vw 40vw 40vw 30.5vw;
+		grid-template-rows: 40vw 40vw 30.5vw 40vw 40vw 40vw 30.5vw;
 	}
 .g01 {grid-row: 1/ span 1; grid-column: 1/ span: 1;}
 .g02 {grid-row: 1/ span 1; grid-column: 2/ span: 1;}
