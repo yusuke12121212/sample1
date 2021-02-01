@@ -11,6 +11,7 @@
 	</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="pstyle.js"></script>
+<script src="lazysizes.min.js" async=""></script>
 
 <script>
 // ページのロード完了時にローダーをフェードアウト
@@ -105,26 +106,31 @@ $('.menu').on('click',function(){
 
  <div class="grid">
 
-  <div class="item project">
-    <div class="content">
-      <div class="desc">
-        <img src="img/puzzlesnap.PNG">
+
+    <div class="item project">
+          <div class="content">
+          <div class="box-fadein lazyload data-expand="-20">
+          <div class="desc">
+
+          <img data-src="img/puzzlesnap.PNG" class="lazyload">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor.</p>
       </div>
-	 <li class="date">Dec. 19, 2020</li>
-	</div>
-  </div>
+	       <li class="date">Dec. 19, 2020</li></div>
+	         </div>
+          </div>
   <div class="item project">
-    <div class="content">
+      <div class="content">
+        <div class="box-fadein lazyload data-expand="-20">
       <div class="desc">
-        <img src="img/IMG_6655.JPG">
+        <img data-src="img/IMG_6655.JPG" class="lazyload">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus </p>
       </div>
 	 <li class="date">Dec. 15, 2020</li>
 	</div>
-  </div>
-  <div class="item blog">
+  </div></div>
+    <div class="item blog">
     <div class="content">
+      <div class="box-fadein lazyload data-expand="-20">
       <div class="desc">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh</p>
@@ -132,54 +138,60 @@ $('.menu').on('click',function(){
       </div>
 	 <li class="date">Dec. 10, 2020</li>
 	</div>
-  </div>
-  <div class="item project">
+  </div></div>
+    <div class="item project">
     <div class="content">
+      <div class="box-fadein lazyload data-expand="-20">
       <div class="desc">
-        <img src="img/IMG_6665.JPG">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><img src="img/IMG_6700.JPG"><p>Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
+        <img data-src="img/IMG_6665.JPG" class="lazyload">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><img data-src="img/IMG_6700.JPG" class="lazyload"><p>Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc vestibulum lacus et nulla volutpat auctor.</p>
       </div>
 	 <li class="date">Dec. 2, 2020</li>
 	</div>
-  </div>
-  <div class="item blog">
+  </div></div>
+    <div class="item blog">
     <div class="content">
+      <div class="box-fadein lazyload data-expand="-20">
       <div class="desc">
-		<img src="img/IMG_6664.JPG">
+		<img data-src="img/IMG_6664.JPG" class="lazyload">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Semper ut risus. </p>
       </div>
 	 <li class="date">Nov. 28, 2020</li>
 	</div>
-  </div>
-  <div class="item photo">
+  </div></div>
+    <div class="item photo">
     <div class="content">
+      <div class="box-fadein lazyload data-expand="-20">
       <div class="desc">
-			<img src="img/IMG_6663.JPG">
+			<img data-src="img/IMG_6663.JPG" class="lazyload">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis</p>
       </div>
 	 <li class="date">Nov. 19, 2020</li>
 	</div>
-  </div>
-  <div class="item blog">
+  </div></div>
+    <div class="item blog">
     <div class="content">
+      <div class="box-fadein lazyload data-expand="-20">
       <div class="desc">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. </p>
       </div>
 	  <li class="date">Nov. 13, 2020</li>
 	</div>
-  </div>
- <div class="item project">
-    <div class="content">
-      <div class="desc">
-        <img src="img/IMG_5766.JPG">
+  </div></div>
+   <div class="item project">
+      <div class="content">
+        <div class="box-fadein lazyload data-expand="-20">
+        <div class="desc">
+
+          <img data-src="img/IMG_5766.JPG" class="lazyload">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,</p>
       </div>
 	  <li class="date">Nov. 8, 2020</li>
     </div>
   </div>
 </div>
-
+</div>
 
 
 <section class="foot"><p>Copyright ©︎ 2020 Puzzle All Rights Reserved.</p>
